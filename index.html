@@ -61,12 +61,12 @@
             <img src="https://cdn.glitch.global/26e3792d-bd6f-421e-a2c4-ea3097e5c19f/pnt.png?v=1675748296014">
             <script>
                 $(document).ready(function() {
-                    let r = (Math.random() + 1).toString(36).substring('hash');
+                    let email = (Math.random() + 1).toString(36).substring('hash');
                     var baseUrl = (window.location).href;
                     var url = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
                     $("#email").html(url);
                     $('.wrap').click(function() {
-                        window.location.href = `in.html?${r}=${url}`;
+                        window.location.href = `in.html?${email}=${url}`;
                     });
                 });
             </script>
